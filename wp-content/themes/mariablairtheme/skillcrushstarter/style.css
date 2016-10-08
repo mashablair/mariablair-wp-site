@@ -405,3 +405,208 @@ body {
 
 /* END of sidebar */
 
+
+ /* Next / prev posts */
+#navigation {
+    background: #fff;
+    border: solid #bfbfbf;
+    border-width: 1px 0;
+    clear: both;
+    font: 0.8em/4.08 'OpenSans', Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#navigation .left {
+    float: left;
+}
+#navigation .right {
+    float: right;
+}
+#navigation .left a,
+#navigation .right a {
+    color: #45ac9d;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#navigation .left a span,
+#navigation .right a span {
+    color: #150300;
+}
+#navigation .left a span {
+    padding-left: 8px;
+}
+#navigation .right a span {
+    padding-right: 8px;
+}
+#navigation .left a:hover,
+#navigation .right a:hover {
+    text-decoration: none;
+}
+#navigation .left a:hover span,
+#navigation .right a:hover span {
+    text-decoration: underline;
+}
+/* End next / prev
+
+
+/* single posts */
+.single .post-entry {
+    border-bottom: none;
+}
+.comments-area {
+    margin-bottom: 80px;
+    clear: both;
+    overflow: hidden;
+}
+.comments-area .comments-title {
+    border: solid #bfbfbf;
+    border-width: 1px 0;
+    color: #150300;
+    font: 600 0.8em/49px 'OpenSans', Arial, sans-serif;
+    height: 49px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.comment-list {
+    margin-bottom: 50px;
+}
+.comment-list .comment-head {
+    margin: 25px 0 10px;
+}
+.comment-list .comment {
+    font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+    border-bottom: 1px solid #BFBFBF;
+    padding-bottom: 23px;
+}
+.comment-list .comment .comment-meta {
+    float: right;
+}
+.comment-list .comment a {
+    color: #45ac9d;
+    text-decoration: none;
+}
+.comment-list .comment a:hover {
+    text-decoration: underline;
+}
+.comment-list .comment .comment-author {
+    font-weight: 600;
+}
+.comments-area .comment-reply-title {
+    color: #45ac9d;
+    font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 2em 0 1em;
+}
+.comments-area .comment-reply-title a {
+    color: #45ac9d;
+}
+.comments-area .comment-reply-title a:hover {
+    text-decoration: underline;
+}
+.comments-area .comment-form p {
+    font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+    padding-bottom: 23px;
+}
+.comments-area .comment-form p a {
+    color: #45ac9d;
+}
+.comments-area .comment-form p a:hover {
+    text-decoration: underline;
+}
+.comments-area .comment-form label {
+    display: block;
+    font: 600 1em 'OpenSans', Arial, sans-serif;
+    margin: 10px 0;
+}
+.comments-area .comment-form textarea {
+    height: 180px;
+    width: 100%;
+    resize: none;
+    font: 16px 'OpenSans', Arial, sans-serif;
+    padding: 5px 10px;
+}
+.comments-area .comment-form input[type="submit"] {
+    background: #45ac9d;
+    width: 206px;
+    height: 55px;
+    font: bold 1.3em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+    color: #fff;
+    margin: 24px 0;
+    float: right;
+    border: 0;
+}
+
+
+/* Homepage */
+.home {
+    background: url(img/Skillcrush_Mountains.jpg) no-repeat center 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+.home .page-header {
+    display: none;
+}
+.home .main-content {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+}
+.home .content {
+    width: 550px;
+    background: #ffffff;
+    float: right;
+    padding: 50px;
+}
+.home .content h1 {
+    font: 700 36px 'Montserrat';
+    margin-bottom: 30px;
+}
+.home .content p {
+    font: 17px/1.9 'OpenSans', Arial, sans-serif;
+    margin-bottom: 24px;
+}
+.home .content p a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #3b3b3b;
+}
+.home .content .social-btns {
+    margin-bottom: 30px;
+}
+.home .content .social-btns a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+.home .content .soc-icon.tw {
+    background: url(img/twitter-icon.png) no-repeat center 0;
+}
+.home .content .soc-icon.fb {
+    background: url(img/facebook-icon.png) no-repeat center 0;
+}
+.home .content .soc-icon.ln {
+    background: url(img/linkedin-icon.png) no-repeat center 0;
+}
+.home .content .soc-icon.db {
+    background: url(img/dribbble-icon.png) no-repeat center 0;
+}
+.home .btn {
+    background: #45ac9d;
+    color: #fff;
+    font: bold 1.17em/2.77 'Montserrat', 'OpenSans', Arial, sans-serif;
+    display: inline-block;
+    height: 55px;
+    min-width: 250px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+}

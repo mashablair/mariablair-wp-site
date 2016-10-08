@@ -31,17 +31,17 @@ function skillcrushstarter_setup() {
 	// Post thumbnails support
 	add_theme_support('post-thumbnails');
 
-	// Register Menus 
+	// Register Menus
 	register_nav_menus ( array (
 		'primary-menu' => __( 'Primary Menu', 'skillcrushstarter' ),
-		'secondary' => __( 'Secondary Menu', 'skillcrushstarter' ),  
+		'secondary' => __( 'Secondary Menu', 'skillcrushstarter' ),
 	) );
 }
 
 add_action( 'after_setup_theme', 'skillcrushstarter_setup' );
 
 
-// Register widget area 
+// Register widget area
 function skillcrushstarter_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar 1', 'skillcrushstarter' ),
@@ -54,3 +54,18 @@ function skillcrushstarter_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'skillcrushstarter_widgets_init' );
+
+// defines custom markup for post comments
+function skillcrush_comments($comment, $args, $depth) {
+	$comment  = '<li class="comment">';
+	$comment .=	'<header class="comment-head">';
+	$comment .= '<span class="comment-author">' . get_comment_author() . '</span>';
+	$comment .= '<span class="comment-meta">' . get_comment_date('m/d/Y') . '&emsp;|&emsp;' . get_comment_reply_link(array('depth' => $depth, 'max_depth' => 5)) . '</span>';
+	$comment .= '</header>';
+	$comment .= '<div class="comment-body">';
+	$comment .= '<p>' . get_comment_text() . '</p>';
+	$comment .= '</div>';
+	$comment .= '</li>';
+
+	echo $comment;
+}
